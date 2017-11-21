@@ -8,7 +8,7 @@ namespace UnitTests
     public class CommandsBusTests
     {
         [Fact]
-        public void Given_command_and_bus_when_send_command_the_command_is_handled()
+        public void CommandsBusTest()
         {
             //Arrange
             var command = Substitute.For<ICommand>();
