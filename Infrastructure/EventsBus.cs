@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Infrastructure
 {
@@ -13,7 +14,7 @@ namespace Infrastructure
 
         public void Send<TEvent>(TEvent @event) where TEvent : IEvent
         {
-            var handlers = (IEnumerable<IHandleEvents<TEvent>>) _handlersFactory(typeof(TEvent));
+            var handlers = _handlersFactory(typeof(TEvent)).Cast<IHandleEvents<TEvent>>();
             foreach (var handler in handlers)
             {
                 handler.Handle(@event);
