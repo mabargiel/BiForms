@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using BTopService.BiForms.BuildingBlocks.EventBus.Abstractions;
+using BTopService.BiForms.BuildingBlocks.EventBus.Events;
 
-namespace Infrastructure
+namespace BTopService.BiForms.BuildingBlocks.EventBus
 {
     public class EventsBus : IEventsBus
     {

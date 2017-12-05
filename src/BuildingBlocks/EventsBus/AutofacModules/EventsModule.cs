@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using Autofac;
-using Infrastructure;
+using BTopService.BiForms.BuildingBlocks.EventBus.Abstractions;
 
-namespace Infrastructure.Modules
+namespace BTopService.BiForms.BuildingBlocks.EventBus.AutofacModules
 {
     public class EventsModule : Module
     {

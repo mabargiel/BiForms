@@ -1,8 +1,7 @@
 using System;
 using Autofac;
-using Infrastructure;
 
-namespace Infrastructure.Modules
+namespace BTopService.BiForms.BuildingBlocks.EventBus.AutofacModules
 {
     public class CommandsModule : Module
     {

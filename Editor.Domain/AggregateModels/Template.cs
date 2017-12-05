@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain
+namespace BTopService.BiForms.Services.Editor.Domain.AggregateModels
 {
     public class Template
     {
